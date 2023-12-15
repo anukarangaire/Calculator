@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BMI Calculator</title>
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="topnav">
+        <a href="../../Responsive-Our-Team-Section/Responsive Our Team Section/index.html">About us</a>
+        <a href="../../Weight-Converter/Weight Converter/index.html">Weight Converter</a>
+        <a href="../../Simple-Interest-Calculator/Simple Interest Calculator/index.html">Simple Interest</a>
+        <a href="../../Number-To-Roman-Converter/Number To Roman Converter/index.html">Roman</a>
+        <a href="../../Is-It-A-Palindrome/Is It A Palindrome/index.html">Palindrome</a>
+        <a href="../../Currency Converter App in JavaScript/Currency Converter App in JavaScript/index.html">Currency</a>
+        <a href="index.html"class="active">BMI</a>
+        <a href="../../Age-Calculator/Age Calculator Javascript/index.html">Age</a>
+        <a href="../../index.html" >Calculator</a>
+      </div>
+    <div class="container">
+        <div class="row">
+            <input type="range" min="20" max="200" value="20" id="weight" oninput="calculate()">
+            <span id="weight-val">20 kg</span>
+        </div>
+        <div class="row">
+            <input type="range" min="100" max="250" value="100" id="height" oninput="calculate()">
+            <span id="height-val">100 cm</span>
+        </div>
+
+        <p id="result">20.0</p>
+        <p id="category">Normal weight</p>
+    </div>
+
+    <!--Script-->
+    <script src="script.js"></script>
+</body>
+</html>
